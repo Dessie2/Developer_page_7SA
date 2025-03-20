@@ -143,3 +143,42 @@ body{
     width: auto;
  }
 }
+
+/*Mis serviccios*/
+@media (min-width: 768px) {
+ .servicios{
+    display: grid;
+    /*Define el area de las columnas*/
+    grid-template-columns: 1fr 1fr 1fr; /*tmb funciona por porcentaje 33.33 33.33 33.33*/
+    /*grid-template-columns: repeat(3, 1fr); column-gap para darle espacio al grid*/
+    /**/
+ }
+}
+
+.servicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicio h3{
+    color: var(--secundario);
+    font-weight: normal;
+}
+
+.servicio{
+    /*para poner interlineado*/
+    line-height: 2;
+    text-align: center;
+}
+
+.servicio .iconos{
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--primario);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*como tomar distancia entre iconos Space-between(distancia de ambos lados), space-ground(*/
+}
