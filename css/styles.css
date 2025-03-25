@@ -135,13 +135,18 @@ body{
   width: 90%;
   /*centrar el texto del boton*/
   text-align: center;
-  
+  /*quitar el border*/
+  border: none;
 }
 
 @media (min-width: 768px) {
  .boton{
     width: auto;
  }
+}
+/*efecto hover manita*/
+.boton:hover{
+    cursor: pointer;
 }
 
 /*Mis serviccios*/
@@ -181,4 +186,93 @@ body{
     justify-content: center;
     align-items: center;
     /*como tomar distancia entre iconos Space-between(distancia de ambos lados), space-ground(*/
+}
+
+/*contacto*/
+.formulario{
+    background-color: var(--gris);
+    width: min(60rem, 100%); /*ahorrar media query*/
+    /*¿que es mas pequeño, 60 rem o 100%?*/
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.formulario fieldset{
+    border: none;
+}
+
+.formulario legend{
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--primario);
+}
+
+.contenedor-campos{
+    
+}
+
+.campo{
+    margin-bottom: 1rem;
+}
+
+.campo label{
+    color: var(--blanco);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block; /*tomara el espacio dispoonible*/
+}
+
+.input-text{
+    width: 100%;
+    border: none;
+    padding: 1.5;
+    border-radius: .5rem;
+}
+
+.campo textarea{
+    height: 20rem;
+}
+
+/*utilidades*/
+.w-sm-100{
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .w-sm-100{
+        width: auto;
+    }
+}
+
+.flex{
+    display: flex;
+}
+
+.alinear-derecha{
+    justify-content: flex-end;
+}
+
+/*Alinear campos*/
+@media (min-width: 768px) {
+ .contenedor-campos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    /*Darle espacio a cada fila*/
+    grid-template-rows: auto auto 20rem;
+}
+
+.campo:nth-child(3),
+.campo:nth-child(4){
+   /* ve de la columna 1 a la 3*/
+    grid-column: 1/3;
+}
+}
+
+.footer{
+    text-align: center;
 }

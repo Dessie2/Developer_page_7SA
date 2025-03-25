@@ -69,37 +69,43 @@
         </div><!---cierre del div de svg-->
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem itaque, ad fugit soluta rem dolores ex maiores accusantium molestiae consequuntur consequatur, veniam minima nemo obcaecati accusamus voluptas corporis harum atque.</p>
     </section>
-    </di> <!---cierre del div de servicios-->
-</main>
-<section>
+    </div> <!---cierre del div de servicios-->
+
+    <section>
     <h2>Contacto</h2>
+    <form class=" formulario">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" width="40" height="40" stroke-width="1.5"> <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"></path> <path d="M15 7a2 2 0 0 1 2 2"></path> <path d="M15 3a6 6 0 0 1 6 6"></path> </svg> 
-    <form>
+        <form>
         <fieldset>
             <legend>Llena tus datos para establecer contacto</legend>
-            <div>
+            <div class="contenedor-campos">
+            <div class="campo">
                 <label>Nombre</label>
                 <input type="text" placeholder="tu nombre">
             </div>
-            <div>
+            <div class="campo">
                 <label>Telefono</label>
                 <input type="tel" placeholder="tu Telefono">
             </div>
-            <div>
-                <label>Nombre</label>
+            <div class="campo">
+                <label>Correo</label>
                 <input type="email" placeholder="tu email">
             </div>
-            <div>
+            <div class="campo">
                 <label>Mensaje</label>
                 <textarea></textarea>
             </div>
-            <div>
-                <input type="submit" value="Enviar">
+             </div> <!---cierre del div de campos-->
+            <div class="alinear-derecha flex">
+                <input class="boton w-sm-100" type="submit" value="Enviar">
             </div>
         </fieldset>
     </form>
+</form>
 </section>
-<footer>
+</main> 
+
+<footer class="footer">
     <p>Copyright 2025 © Dessire Hernandez</p>
 </footer>
 </body>
